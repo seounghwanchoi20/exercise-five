@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post</title>
+    <style>
+
+
+      .formElement {
+        margin-bottom: 18px;
+      }
+
+      .label{
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create Post</h1>
+
+    <form action="/create/submit">
+      <div class="formElement">
+        <label for="title">
+          Title
+          <input id="title" name="title" type="text" />
+        </label>
+      </div>
+      <div class="formElement">
+        <label for="postText">
+          Post Text
+          <input id="postText" name="postText" type="text" />
+        </label>
+      </div>
+      <div class="formElement">
+        <label for="author">
+          Author
+          <input id="author" name="author" type="text" />
+        </label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
